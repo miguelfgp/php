@@ -10,7 +10,9 @@
     echo "Hola, $nombre <br>";
     echo 'Hola, $nombre <br>';
     echo 'Hola, ' . $nombre . '<br>'; 
-    echo gettype($falso);
+    echo gettype($falso) . '<br>';
+    define('PI', 3.14);
+    echo "PI <br>";
 ?>
 </body>
 </html>
