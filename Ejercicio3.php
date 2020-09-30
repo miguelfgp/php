@@ -8,7 +8,11 @@
         }
 
         td{
+<<<<<<< HEAD
             padding: 10px;
+=======
+            padding: 3px;
+>>>>>>> 3eed9700f2b7a91558f623275dd70fa28bf01669
             text-align: center;
         }
     </style>
