@@ -1,7 +1,7 @@
 <html>
 <body>
 <?php
-    $edad = 19;
+    $edad = "";
     $nombre = "Pepe";
     if($edad >= 18 && $nombre == 'Pepe'){
         echo "<h1>Mayor de edad</h1>";
