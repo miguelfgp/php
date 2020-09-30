@@ -8,7 +8,7 @@
         }
 
         td{
-            padding: 3px;
+            padding: 10px;
             text-align: center;
         }
     </style>
@@ -30,7 +30,7 @@
         }
 
         for ($j=1; $j<=TAM; $j++){
-         echo '<td> '. $numero++ . '<td>';
+         echo '<td> '. $numero++ . '</td>';
         }
 
         echo '</tr>';
