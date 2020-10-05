@@ -15,19 +15,41 @@
         <li><a href = "Ejercicio8.php">Ejercicio 8</a></li>
     </ul>
 </nav>
-
-    <form>
-        <select>
+    
+    <div class="contenedor">
     <?php
 
     define ('TAM', 10);
+    $numero = 1;
+    $fila = 1;
 
     for ($i=1; $i<=TAM; $i++){
-        echo '<option>' .$i. '</option>';
+
+        echo '<table><th>Tabla del ' .$i. '</th>';
+
+        if ($fila % 2 == 0.0){
+            echo '<tr class="par">';
+        } else {
+            echo '<tr>';
+        }           
+
+        for ($j=1; $j<=TAM; $j++){
+
+            if ($i % 2 == 0){
+                echo '<tr class="par">';
+            } else {
+                echo '<tr>';
+            }            
+
+        echo '<td> '. $i . ' X ' . $j . ' = ' . $i * $j . '</td>';
+
+        echo '</tr>';
+        }
+
+        echo '</table>';
     }
     
     ?>
-    </select>
-    </form>
+    </div>    
 </body>
 </html>

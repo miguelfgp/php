@@ -15,19 +15,29 @@
         <li><a href = "Ejercicio8.php">Ejercicio 8</a></li>
     </ul>
 </nav>
+<?php
 
-    <form>
-        <select>
-    <?php
+    $a = 34;
+    $b = 36;
+    $c = 35;
 
-    define ('TAM', 10);
+    $mayor;
 
-    for ($i=1; $i<=TAM; $i++){
-        echo '<option>' .$i. '</option>';
+    if (($a > $b) && ($a > $c)){
+        $mayor = $a;
+        $variable = 'a';
+    } else if ($c > $b){
+        $mayor = $c;
+        $variable = 'c';
+    } else {
+        $mayor = $b;
+        $variable = 'b';
     }
-    
-    ?>
-    </select>
-    </form>
+
+    $mayor;
+
+    echo 'La variable ' . $variable . ' tiene el valor mayor: ' . $mayor;
+
+?>
 </body>
 </html>
