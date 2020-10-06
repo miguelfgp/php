@@ -15,6 +15,9 @@
         <li><a href = "Ejercicio8.php">Ejercicio 8</a></li>
     </ul>
 </nav>
+<h1>Ejercicios Tema 1 -  Miguel FGP</h1>
+
+<h3>Mostrar las tablas de multiplicar del 1 al 10. Utilizar el bucle for.</h3>
     
     <div class="contenedor">
     <?php
@@ -27,23 +30,20 @@
 
         echo '<table><th>Tabla del ' .$i. '</th>';
 
-        if ($fila % 2 == 0.0){
-            echo '<tr class="par">';
-        } else {
-            echo '<tr>';
-        }           
-
         for ($j=1; $j<=TAM; $j++){
-
-            if ($i % 2 == 0){
+		
+		
+            if ($fila % 2 == 0){
                 echo '<tr class="par">';
             } else {
                 echo '<tr>';
             }            
 
-        echo '<td> '. $i . ' X ' . $j . ' = ' . $i * $j . '</td>';
+			echo '<td> '. $i . ' X ' . $j . ' = ' . $i * $j . '</td>';
 
-        echo '</tr>';
+			echo '</tr>';
+			
+			$fila++;
         }
 
         echo '</table>';

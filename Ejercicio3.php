@@ -15,6 +15,9 @@
         <li><a href = "Ejercicio8.php">Ejercicio 8</a></li>
     </ul>
 </nav>
+<h1>Ejercicios Tema 1 - Miguel FGP</h1>
+
+<h3>Mostrar en pantalla una tabla de 10 por 10 con los números del 1 al 100. Colorear las filas alternando gris y blanco. Además, el tamaño será una constante: define(TAM,10).</h3>
     <table>
     <?php
 

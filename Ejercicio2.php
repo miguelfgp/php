@@ -15,6 +15,9 @@
         <li><a href = "Ejercicio8.php">Ejercicio 8</a></li>
     </ul>
 </nav>
+<h1>Ejercicios Tema 1 - Miguel FGP</h1>
+
+<h3>Hacer un programa que muestre en pantalla información de PHP con la función phpinfo(). Muestre la información centrada horizontalmente en la pantalla.</h3>
 <?php
 
     phpinfo();

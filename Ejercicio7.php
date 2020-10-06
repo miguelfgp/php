@@ -15,6 +15,9 @@
         <li><a href = "Ejercicio8.php">Ejercicio 8</a></li>
     </ul>
 </nav>
+<h1>Ejercicios Tema 1 -  Miguel FGP</h1>
+
+<h3>Mostrar el mayor valor de 3 variables numéricas (Ejemplo de mensaje: La variable $a tiene el valor mayor: 10)</h3>
 <?php
 
     $a = 34;
@@ -22,6 +25,8 @@
     $c = 35;
 
     $mayor;
+	
+	echo "<p>Si la variable a vale $a, la variable b vale $b, y la variable c vale $c</p>";
 
     if (($a > $b) && ($a > $c)){
         $mayor = $a;
@@ -36,7 +41,7 @@
 
     $mayor;
 
-    echo 'La variable ' . $variable . ' tiene el valor mayor: ' . $mayor;
+    echo '<p>La variable ' . $variable . ' tiene el valor mayor: ' . $mayor . '</p>';
 
 ?>
 </body>

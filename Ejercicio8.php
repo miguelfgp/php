@@ -15,36 +15,45 @@
         <li><a href = "Ejercicio8.php">Ejercicio 8</a></li>
     </ul>
 </nav>
-    <table>
+<h1>Ejercicios Tema 1 -  Miguel FGP</h1>
+
+<h3>Mostrar las tablas de multiplicar del 1 al 10. Utilizar el bucle while.</h3>
+    <div class="contenedor">
     <?php
 
     define ('TAM', 10);
     $i = 0;
-    $numero = 1;
+    $fila = 1;
 
     while ($i<TAM){
-        
-        $i++;
 
-        if ($i % 2 == 0){
-            echo '<tr class="par">';
-        } else {
-            echo '<tr>';
-        }
+	$i++;
 
-        $j = 0;
+        echo '<table><th>Tabla del ' .$i. '</th>';
+
+	$j = 0;
 
         while ($j<TAM){
+		
+		$j++;
+		
+            if ($fila % 2 == 0){
+                echo '<tr class="par">';
+            } else {
+                echo '<tr>';
+            }            
 
-            $j++;
+			echo '<td> '. $i . ' X ' . $j . ' = ' . $i * $j . '</td>';
 
-            echo '<td> '. $i . ' X ' . $j . ' = ' . $i * $j . '</td>';
-            }
+			echo '</tr>';
+			
+			$fila++;
+        }
 
-        echo '</tr>';
+        echo '</table>';
     }
     
     ?>
-    </table>
+    </div>    
 </body>
 </html>
