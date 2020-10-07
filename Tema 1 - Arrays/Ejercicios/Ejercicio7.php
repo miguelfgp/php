@@ -17,22 +17,30 @@
 </nav>
 <h1>Ejercicios Tema 1 (Arrays) -  Miguel FGP</h1>
 
-<h3>Escriba un programa que muestre una tirada de un número de dados al azar entre 2 y 7 (dados) en indique los valores.</h3>
+<h3><h3>Generar en PHP un array bidimensional de 6 x 4 tal que cada fila contenga los sucesivos múltiplos de 3, desde el 3 en adelante. Mostrar el array en una tabla HTML</h3></h3>
 <?php
 
-    $numero_dados = rand(2, 7);
+    define('FILAS', 6);
+    define('COLUMNAS', 4);
 
-    for ($i = 0; $i <= $numero_dados; $i++){
-        $tirada[$i] = rand(1, 6);
+    $operando = 1;
+
+    echo '<table>';
+
+    for ($i = 1; $i <= FILAS; $i++){
+        echo '<tr>';
+
+        for ($j = 1; $j <= COLUMNAS; $j++){
+
+            $multiplo = 3 * $operando;
+            $matriz[$i][$j] = $multiplo;
+            $operando++;
+
+            echo '<td>' . $matriz[$i][$j] . '</td>';    
+        }
     }
-    
-    echo '<p>El resultado de la tirada es: ';
 
-    foreach ($tirada as $numero){
-        echo $numero . ' ';
-    }
-
-    echo '<p>';
+    echo '</table>';
 
 ?>
 </body>
