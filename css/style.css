@@ -23,8 +23,16 @@ nav li{
     position:relative;
 }
 
-nav li:hover{
+nav > ul > li:hover{
     background-color: lightsteelblue;
+}
+
+nav > ul > li > ul{
+    display: none;
+}
+
+nav > ul li:hover > ul{
+    display: block;
 }
 
 table {
