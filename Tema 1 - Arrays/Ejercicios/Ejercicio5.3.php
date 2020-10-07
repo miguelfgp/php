@@ -22,10 +22,29 @@
 <h3>Con una sintaxis que combine el uso de array y el uso de índices, y mostrar por pantalla los alumnos que existen en cada nivel e idioma.</h3>
 <?php
 
-    define('FILAS', 5);
-    define('COLUMNAS', 6);
 
+    $idiomas = array(
+        0 => "Inglés",
+        1 => "Francés",
+        2 => "Alemán",
+        3 => "Ruso"
+    );
+
+    $niveles = array(
+        'Nivel básico',
+        'Nivel medio',
+        'Nivel avanzado'
+    );
+
+    foreach ($idiomas as $idioma){
+        echo $idioma . '<br>';
+    }
+
+    
+    /*
     echo '<table>';
+
+
 
     for ($i = 0; $i < FILAS; $i++){
 
@@ -41,6 +60,7 @@
 
         echo '</tr>';
     }
+    */
 
 ?>
 </body>

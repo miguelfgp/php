@@ -23,10 +23,47 @@
 
 <?php
 
-    define('FILAS', 5);
-    define('COLUMNAS', 6);
+    $idiomas = [
+        0 => [
+            0 => 1,
+            1 => 6,
+            2 => 3
+        ],
+        1 => [
+            0 => 14,
+            1 => 19,
+            2 => 13
+        ],
+        2 => [
+            0 => 8,
+            1 => 7,
+            2 => 4
+        ],
+        3 => [
+            0 => 3,
+            1 => 2,
+            2 => 1
+        ]
+    ];
 
+    /*
+    $niveles = array(
+        'Nivel básico',
+        'Nivel medio',
+        'Nivel avanzado'
+    );
+    */
+
+    foreach ($idiomas as $idioma){
+        foreach ($idioma as $nivel){
+            echo $nivel . '<br>';
+        }
+    }
+
+    /*
     echo '<table>';
+
+
 
     for ($i = 0; $i < FILAS; $i++){
 
@@ -42,6 +79,7 @@
 
         echo '</tr>';
     }
+    */
 
 ?>
 </body>
